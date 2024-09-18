@@ -1,10 +1,17 @@
-const arr = 'kamal ahmed raghe'  
-const size = 2
-const BigArray = []
+const string = document.getElementById('string')
 
-for(let word of arr.split(' ') ){
-    const subarray = word[0].toUpperCase() + word.slice(1)
-    BigArray.push(subarray)
+let steps = 4
+
+for(let row = 0; row < steps; ++row){
+    let eachSteps = ''
+    for(let column = 0; column < steps; ++column){
+        if(column <= row){
+            eachSteps += '#'
+        }else{
+            eachSteps += ' '
+        }
+       
+    } console.log(eachSteps)
+
 }
 
-console.log(BigArray.join(' '))
